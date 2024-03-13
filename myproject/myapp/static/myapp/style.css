@@ -1,0 +1,25 @@
+
+body {
+    background-color: #b5baef;
+    margin: 3;
+    padding: 2;
+}
+
+h1 {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+ul {
+    list-style-type: circle;
+    
+}
+a {
+    background-color: #000000;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+
+  }
+

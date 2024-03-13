@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+    <title>Add Person</title>
+</head>
+<body>
+    <h1>Add Person</h1>
+    <form method="post" action="{% url 'add' %}">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <br>
+        <input type="text" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="text" name="password" required>
+        <br> <br>
+
+        <input type="submit" value="Add Person">
+        <br>
+        <br>
+    </form>
+    <p><a href="{% url 'default' %}"> List of names</a></p>
+</body>
+</html>
+
+
